@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.container-first{
+    /* /* color: white; */
+    background: #000000; */
+}
+.input-field{
+    width: 516px;
+    height: 100px;
+    background: #000000;
+    color:white;
+}
+
+.container-second{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    background: #252D44;
+    color: white;
+    width: 516px;
+    height: 350px;
+    gap: ;
+}
+.grid-item{
+    color: #000000;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+.reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.equals{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
