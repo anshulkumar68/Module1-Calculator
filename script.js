@@ -1,9 +1,7 @@
-function showTextContent() {
-  let element = document.getElementById("example");
-  alert("textContent: " + element.textContent);
-}
+const input = Number(document.querySelector('.input-field').value);
+console.log(input);
 
-function showInnerText() {
-  let element = document.getElementById("example");
-  alert("innerText: " + element.innerText);
-}
+const gridItems = document.querySelectorAll('.grid-item')
+
+gridItems.forEach(function(item))
+console.log("button pressed");
