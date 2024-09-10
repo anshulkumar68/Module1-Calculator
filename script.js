@@ -11,69 +11,73 @@ const six = document.querySelector('.six');
 const seven = document.querySelector('.seven');
 const eight = document.querySelector('.eight');
 const nine = document.querySelector('.nine');
-const del = document.querySelector('.delete');
-const add = document.querySelector('.add');
-const sub = document.querySelector('.subtract');
-const mul = document.querySelector('.multiply');
-const divide = document.querySelector('.division');
-const reset = document.querySelector('.reset');
-const equal = document.querySelector('.equals');
 const dot = document.querySelector('.dot');
-const input = document.querySelector('.input-field');
+const display = document.querySelector('.input-field');
+const addButton = document.querySelector('.add');
+const subButton = document.querySelector('.subtract');
+const mulButton = document.querySelector('.multiply');
+const divideButton = document.querySelector('.division');
+const resetButton = document.querySelector('.reset');
+const equalsButton = document.querySelector('.equals');
+const deleteButton = document.querySelector('.delete');
+const buttons = document.querySelectorAll('.btn');
 
+let currentInput = '';
+let operator = '';
+let previousInput = '';
 
-// on click updating values to input field
+// on click updating values to display field
 zero.addEventListener("click", () => {
-  input.value += zero.textContent;
+  display.value += zero.textContent;
 });
 one.addEventListener("click", () => {
-  input.value += one.textContent;
+  display.value += one.textContent;
 });
 two.addEventListener('click', ()=>{
-    input.value  += two.textContent;
+    display.value  += two.textContent;
 })
 three.addEventListener("click", () => {
-  input.value += three.textContent;
+  display.value += three.textContent;
 });
 four.addEventListener("click", () => {
-  input.value += four.textContent;
+  display.value += four.textContent;
 });
 five.addEventListener("click", () => {
-  input.value += five.textContent;
+  display.value += five.textContent;
 });
 six.addEventListener("click", () => {
-  input.value += six.textContent;
+  display.value += six.textContent;
 });
 seven.addEventListener("click", () => {
-    input.value += seven.textContent;
+    display.value += seven.textContent;
 });
 eight.addEventListener('click', ()=>{
-    input.value  += eight.textContent;
+    display.value  += eight.textContent;
 })
 nine.addEventListener('click', ()=>{
-    input.value  += nine.textContent;
+    display.value  += nine.textContent;
 })
-add.addEventListener('click', ()=>{
-    input.value += add.textContent;
+addButton.addEventListener('click', ()=>{
+    display.value += addButton.textContent;
 })
-sub.addEventListener('click', ()=>{
-    input.value += sub.textContent;
+subButton.addEventListener('click', ()=>{
+    display.value += subButton.textContent;
 })
-mul.addEventListener('click', ()=>{
-    input.value += mul.textContent;
+mulButton.addEventListener('click', ()=>{
+    display.value += mulButton.textContent;
 })
-divide.addEventListener('click', ()=>{
-    input.value += divide.textContent;
+divideButton.addEventListener('click', ()=>{
+    display.value += divideButton.textContent;
 })
 dot.addEventListener("click", () => {
-  input.value += dot.textContent;
+  display.value += dot.textContent;
 });
 
+// delete button functionality
+deleteButton.addEventListener('click', ()=>{
+    currentInput = display.value.slice(0,-1);
+    display.value = currentInput;
+})
 
-
-
-
-
-
-
-
+console.log(display.value);
+// if(display.)
