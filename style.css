@@ -22,12 +22,6 @@
     padding-bottom: 5px;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 1rem;
-}
-
 .input-field{
     width: 330px;
     height: 5.5rem;
@@ -36,11 +30,13 @@
     border-radius: 0.5rem;
     font-size: 2rem;
     text-align: right;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     padding: 0rem 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 4px 7px 32px 0px #00000070;
 }
 
-.container-second{
+.grid-container{
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: auto auto auto auto;
@@ -53,6 +49,7 @@
     font-weight: 800;
     font-size: 1.2rem;
     border-radius: 0.5rem;
+    box-shadow: 4px 7px 32px 0px #00000070;
 }
 .grid-item{
     color: #000000;

@@ -11,33 +11,27 @@
 <body class="bg-[#3B4664]">
 
     <main class="main-container">
-        <p class="calc-text">
-            calc
-        </p>
+        <p class="calc-text">calc</p>
+        <input class="input-field" type="text" readonly>
         <div class="grid-container">
-            <div class="container-first ">
-                <input class="input-field" type="text">
-            </div>
-            <div class="container-second">
-                <button class="grid-item btn seven">7</button>
-                <button class="grid-item btn eight">8</button>
-                <button class="grid-item btn nine">9</button>
-                <button class="grid-item btn delete">DEL</button>
-                <button class="grid-item btn four">4</button>
-                <button class="grid-item btn five">5</button>
-                <button class="grid-item btn six">6</button>
-                <button class="grid-item btn add">+</button>
-                <button class="grid-item btn one">1</button>
-                <button class="grid-item btn two">2</button>
-                <button class="grid-item btn three">3</button>
-                <button class="grid-item btn subtract">-</button>
-                <button class="grid-item btn dot">.</button>
-                <button class="grid-item btn zero">0</button>
-                <button class="grid-item btn division">/</button>
-                <button class="grid-item btn multiply">X</button>
-                <button class="grid-item btn reset">RESET</button>
-                <button class="grid-item btn equals">=</button>
-            </div>
+            <button class="grid-item seven" onclick="appendtoDisplay('7')">7</button>
+            <button class="grid-item eight" onclick="appendtoDisplay('8')">8</button>
+            <button class="grid-item nine" onclick="appendtoDisplay('9')">9</button>
+            <button class="grid-item delete" onclick="handleDelete()">DEL</button>
+            <button class="grid-item four" onclick="appendtoDisplay('4')">4</button>
+            <button class="grid-item five" onclick="appendtoDisplay('5')">5</button>
+            <button class="grid-item six" onclick="appendtoDisplay('6')">6</button>
+            <button class="grid-item add" onclick="appendtoDisplay('+')">+</button>
+            <button class="grid-item one" onclick="appendtoDisplay('1')">1</button>
+            <button class="grid-item two" onclick="appendtoDisplay('2')">2</button>
+            <button class="grid-item three" onclick="appendtoDisplay('3')">3</button>
+            <button class="grid-item subtract" onclick="appendtoDisplay('-')">-</button>
+            <button class="grid-item dot" onclick="appendtoDisplay('.')" dot">.</button>
+            <button class="grid-item zero" onclick="appendtoDisplay('0')">0</button>
+            <button class="grid-item divide" onclick="appendtoDisplay('/')">/</button>
+            <button class="grid-item multiply" onclick="appendtoDisplay('*')">X</button>
+            <button class="grid-item reset" onclick="clearDisplay()">RESET</button>
+            <button class="grid-item equals" onclick="calculate()">=</button>
         </div>
     </main>
 
