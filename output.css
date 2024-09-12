@@ -575,14 +575,14 @@ video {
 
 .calc-text{
   color: white;
-  margin-right: 20.5rem;
+  margin-right: 18.5rem;
   font-weight: 700;
   padding-bottom: 5px;
 }
 
 .input-field{
-  width: 330px;
-  height: 5.5rem;
+  width: 18.75rem;
+  height: 5rem;
   background: #000000;
   color:white;
   border-radius: 0.5rem;
@@ -601,8 +601,8 @@ video {
   place-items: center;
   background: #252D44;
   color: white;
-  width: 330px;
-  height: 260px;
+  width: 18.75rem;
+  height: 15.62rem;
   padding: 1.5rem 1rem;
   font-weight: 800;
   font-size: 1.2rem;
@@ -613,9 +613,10 @@ video {
 .grid-item{
   color: #000000;
   background-color: white;
-  padding: 0.3rem 0;
+  padding: 0.2rem 0;
   border-radius: 0.5rem;
-  width: 4rem;
+  width: 3.5rem;
+  box-shadow: 4px 7px 32px 0px #00000070;
 }
 
 .delete{
@@ -629,7 +630,7 @@ video {
   grid-column-end: 3;
   background-color: #647299;
   color: white;
-  width: 9rem;
+  width: 8.2rem;
   padding: 0.3rem 0;
   letter-spacing: 2px;
   font-weight: 700;
@@ -640,6 +641,6 @@ video {
   grid-column-end: 5;
   background-color: #D13F30;
   color: white;
-  width: 9rem;
+  width: 8.2rem;
   padding: 0.3rem 0;
 }
