@@ -104,7 +104,7 @@ function evaluateExpression(tokens) {
         result = leftOperand / rightOperand;
         break;
     }
-    operandStack.push(operandStack.push((result % 1 !== 0) ? parseFloat(result.toFixed(3)) : result));
+    operandStack.push((result % 1 !== 0) ? parseFloat(result.toFixed(3)) : result);
   }
 
   // The result should be the only item on the operand stack
