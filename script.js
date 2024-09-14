@@ -38,7 +38,7 @@ function calculate() {
   try {
     const tokens = tokenize(display.value);
     const result = evaluateExpression(tokens);
-    display.value = result;
+    display.value = result % 1 !== 0 ? result.toFixed(3) : result;
   } catch (error) {
     display.value = 'error';
   }
@@ -104,7 +104,7 @@ function evaluateExpression(tokens) {
         result = leftOperand / rightOperand;
         break;
     }
-    operandStack.push(result);
+    operandStack.push(operandStack.push((result % 1 !== 0) ? parseFloat(result.toFixed(3)) : result));
   }
 
   // The result should be the only item on the operand stack
