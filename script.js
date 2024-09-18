@@ -15,6 +15,10 @@
 // //     }
 // //   }
 
+let value = document.querySelector('.nine').innerText;
+value.textContent = "nine";
+console.log(value);
+
 // Select the display input field
 const display = document.querySelector('.input-field');
 
